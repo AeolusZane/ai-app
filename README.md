@@ -4,3 +4,9 @@ This's an app you can write your entries. By AI power, it can tell you what the 
 U can ask it, how i felt that day? Was i in a bad mood this month?... AI will give you answer.
 
 We don't need to know anything about the ai algorithm, just need to know how to call the api of openAI.
+
+# Setup
+`npm install`
+
+# Run
+`npm run dev`
