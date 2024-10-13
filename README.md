@@ -5,8 +5,17 @@ U can ask it, how i felt that day? Was i in a bad mood this month?... AI will gi
 
 We don't need to know anything about the ai algorithm, just need to know how to call the api of openAI.
 
+## Database Server
+[Neon](https://console.neon.tech/app/projects)
+
+if don't have `neonctl` need to install it `npm install -g neonctl`
+
+## Database ORM
+[Prisma](https://www.prisma.io/)
+
 # Setup
 `npm install`
+
 
 # Run
 `npm run dev`
