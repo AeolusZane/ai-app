@@ -5,6 +5,9 @@ U can ask it, how i felt that day? Was i in a bad mood this month?... AI will gi
 
 We don't need to know anything about the ai algorithm, just need to know how to call the api of openAI.
 
+## Crypto Env
+I use crypto to upload env variables, `npm run gen` to generate env variable. 
+
 ## Database Server
 [Neon](https://console.neon.tech/app/projects)
 
