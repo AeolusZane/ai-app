@@ -35,7 +35,7 @@ inquirer.default.prompt([
 
 const get_key_iv = (password) => {
     const key = crypto.createHash("sha256").update(password).digest("bit");
-    const iv = key.slice(0, 16);
+    const iv = Uint8Array.prototype.slice.apply(key, [0, 16]);
     return { key, iv };
 }
 
