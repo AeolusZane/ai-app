@@ -13,7 +13,11 @@ I use crypto to upload env variables, `npm run gen` to generate env variable.
 - 用【私钥】对【消息摘要】做签名，生成【地址】，使用`recoverAddress`
 - 【地址】用于验证密码是否正确，【地址】明文保存
 - 用【对称加密】恢复环境变量文件
-```javascript
+
+**File: gen_env.js**
+
+```javascript 
+/// ...
     const key = new SigningKey(id("private-key"));
     const digest = id("private-key");
     const sig = key.sign(digest).serialized;
@@ -27,6 +31,7 @@ I use crypto to upload env variables, `npm run gen` to generate env variable.
     } else {
         console.error("Invalid password");
     }
+/// ...
 ```
 
 ## Database Server
