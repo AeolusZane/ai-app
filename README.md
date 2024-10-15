@@ -8,6 +8,12 @@ We don't need to know anything about the ai algorithm, just need to know how to 
 ## Crypto Env
 I use crypto to upload env variables, `npm run gen` to generate env variable. 
 
+- 通过将【密码】做hash(使用`id`)生成`SigningKey`【私钥】
+- 使用`id`生成【消息摘要】
+- 用【私钥】对【消息摘要】做签名，生成【地址】，使用`recoverAddress`
+- 【地址】用于验证密码是否正确，【地址】明文保存
+- 用【对称加密】恢复环境变量文件
+
 ## Database Server
 [Neon](https://console.neon.tech/app/projects)
 
