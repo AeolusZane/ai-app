@@ -1,7 +1,9 @@
 const crypto = require('crypto');
-const { hashMessage } = require("ethers")
+const { SigningKey, id, recoverAddress } = require("ethers")
 const fs = require('fs');
 const inquirer = require('inquirer');
+
+const VERIFY_ADDRESS = '0xFe385403F6C7eB0f9322C2AE0950BaC25077F24c';
 
 inquirer.default.prompt([
     {
@@ -18,9 +20,11 @@ inquirer.default.prompt([
         mask: '*'
     },
 ]).then(answers => {
-    if (hashMessage(answers.password) ===
-        '0x2e096662e942c5892e5d7523275a148d5369e990b37a65c2f92035769b68d052'
-    ) {
+    const key = new SigningKey(id(answers.password));
+    const digest = id(answers.password);
+    const sig = key.sign(digest).serialized;
+    const address = recoverAddress(digest, sig);
+    if (address === VERIFY_ADDRESS) {
         if (answers.mode === 'encrypt') {
             cipher_file(answers.password);
         } else {
