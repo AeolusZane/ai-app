@@ -48,3 +48,20 @@ if don't have `neonctl` need to install it `npm install -g neonctl`
 
 # Run
 `npm run dev`
+
+**project setup**
+
+- serveless database: neon
+- databse orm: prisma
+- auth: clerk
+- log in/sign up logic
+
+...
+2024-10-19
+
+**building the journal page**
+
+- new user
+- creating the journal page
+- user profile widget from clerk
+- journal entry ui
