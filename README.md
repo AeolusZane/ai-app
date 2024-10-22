@@ -49,6 +49,8 @@ if don't have `neonctl` need to install it `npm install -g neonctl`
 # Run
 `npm run dev`
 
+# Logs
+
 **project setup**
 
 - serveless database: neon
