@@ -66,8 +66,14 @@ if don't have `neonctl` need to install it `npm install -g neonctl`
 - user profile widget from clerk
 - journal entry ui
 
-**creating & updating journal entries
+**creating & updating journal entries**
 
 - api call
 - new entry component
 - entry card component
+
+2024-10-23
+
+- entry page
+- entry detail query
+- auto save
