@@ -51,6 +51,7 @@ if don't have `neonctl` need to install it `npm install -g neonctl`
 
 # Logs
 
+### ...
 **project setup**
 
 - serveless database: neon
@@ -58,8 +59,9 @@ if don't have `neonctl` need to install it `npm install -g neonctl`
 - auth: clerk
 - log in/sign up logic
 
-...
-2024-10-19
+### ... 
+
+### 2024-10-19
 
 **building the journal page**
 
@@ -74,7 +76,7 @@ if don't have `neonctl` need to install it `npm install -g neonctl`
 - new entry component
 - entry card component
 
-2024-10-23
+### 2024-10-23
 
 - entry page
 - entry detail query
