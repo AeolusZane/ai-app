@@ -72,8 +72,15 @@ if don't have `neonctl` need to install it `npm install -g neonctl`
 - new entry component
 - entry card component
 
-2024-10-23
+2024-10-22
 
 - entry page
 - entry detail query
 - auto save
+
+2024-10-23
+
+ai part
+- side bar
+- LLM & Prompts
+![](./image.png)
