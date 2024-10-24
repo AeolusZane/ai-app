@@ -88,3 +88,11 @@ ai part
 - side bar
 - LLM & Prompts
 ![](./image.png)
+
+### 2024-10-24
+
+prompt {schema}
+
+schema library `zod`
+
+`StructuredOutputParser`
