@@ -96,3 +96,9 @@ prompt {schema}
 schema library `zod`
 
 `StructuredOutputParser`
+
+### 2024-10-25
+
+prompt engineer
+
+analysis result and responsible to alter content
