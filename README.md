@@ -125,3 +125,11 @@ search API & Results
 修复问题，把Journal页面改成client component，响应切换事件
 
 data visualization
+
+- Writing Test
+
+packages download
+
+test tsconfig
+
+![test screenshot](./test.png)
