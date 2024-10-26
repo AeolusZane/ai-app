@@ -21,7 +21,6 @@ const Editor = ({ entry }) => {
   useAutosave({
     data: value,
     onSave: async (_value) => {
-      console.log('?????')
       if (!firstRender.current) {
         firstRender.current = true
         return

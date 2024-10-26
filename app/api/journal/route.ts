@@ -15,6 +15,7 @@ export const POST = async () => {
     const analysis = await analyze(entry.content) as any;
     await prisma.analysis.create({
         data: {
+            userId: user.id,
             entryId: entry.id,
             ...analysis
         }
@@ -22,4 +23,18 @@ export const POST = async () => {
     revalidatePath('/journal');
 
     return NextResponse.json({ data: entry })
+}
+
+export const GET = async () => {
+    const user = await getUserByClerkID();
+    const entries = await prisma.journalEntry.findMany({
+        where: {
+            userId: user.id,
+        },
+        orderBy: {
+            createdAt: 'desc'
+        }
+    });
+
+    return NextResponse.json({ data: entries });
 }

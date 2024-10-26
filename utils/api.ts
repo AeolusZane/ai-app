@@ -30,6 +30,17 @@ export const createNewEntry = async () => {
     }
 }
 
+export const getEntries = async () => {
+    const res = await fetch(new Request(createURL('/api/journal'), {
+        method: 'GET',
+    }))
+
+    if (res.ok) {
+        const data = await res.json();
+        return data.data;
+    }
+}
+
 export const askQuestion = async (question) => {
     const res = await fetch(new Request(createURL('/api/question'), {
         method: 'POST',

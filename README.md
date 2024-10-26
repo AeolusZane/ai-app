@@ -119,3 +119,9 @@ Vector Database [pinecone]
 search API & Results
 
 - Sentiment Analysis
+
+给分析添加用户关系，能直接根据analysis找到用户
+
+修复问题，把Journal页面改成client component，响应切换事件
+
+data visualization
