@@ -5,6 +5,12 @@ U can ask it, how i felt that day? Was i in a bad mood this month?... AI will gi
 
 We don't need to know anything about the ai algorithm, just need to know how to call the api of openAI.
 
+项目使用丰富的全栈技术栈
+- nextjs
+- 加密算法对.env文件加密
+- serveless数据库，orm数据库管理工具
+- openai、prompt工具
+
 ## Crypto Env
 I use crypto to upload env variables, `npm run gen` to generate env variable. 
 
