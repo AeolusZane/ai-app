@@ -3,6 +3,7 @@ import Link from 'next/link'
 const links = [
   { href: '/', label: 'Home' },
   { href: '/journal', label: 'Journal' },
+  { href: '/history', label: 'History' },
 ]
 const DashboardLayout = ({ children }) => {
   return (
@@ -11,7 +12,7 @@ const DashboardLayout = ({ children }) => {
         <div>Mood</div>
         <ul>
           {links.map((link) => (
-            <li key={link.href} className='px-2 py-6 text-xl'>
+            <li key={link.href} className="px-2 py-6 text-xl">
               <Link href={link.href}>{link.label}</Link>
             </li>
           ))}

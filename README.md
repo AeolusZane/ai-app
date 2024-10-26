@@ -108,3 +108,14 @@ schema library `zod`
 prompt engineer
 
 analysis result and responsible to alter content
+
+### 2024-10-26
+
+Vector Database [pinecone]
+
+- in memory Vector database
+[open ai blog](https://openai.com/index/introducing-text-and-code-embeddings/)
+
+search API & Results
+
+- Sentiment Analysis

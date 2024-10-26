@@ -1,13 +1,14 @@
 'use client'
 
 import { updateEntry } from '@/utils/api'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { useAutosave } from 'react-autosave'
 
 const Editor = ({ entry }) => {
   const [value, setValue] = useState(entry?.content)
   const [isLoading, setIsLoading] = useState(false)
   const [analysis, setAnalysis] = useState(entry?.analysis)
+  const firstRender = useRef(false)
 
   const { mood, summary, color, subject, negative } = analysis! || {}
   const analysisData = [
@@ -20,6 +21,11 @@ const Editor = ({ entry }) => {
   useAutosave({
     data: value,
     onSave: async (_value) => {
+      console.log('?????')
+      if (!firstRender.current) {
+        firstRender.current = true
+        return
+      }
       setIsLoading(true)
       const data = await updateEntry(entry.id, _value)
       setAnalysis(data.analysis)
