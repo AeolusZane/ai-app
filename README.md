@@ -5,6 +5,24 @@ U can ask it, how i felt that day? Was i in a bad mood this month?... AI will gi
 
 We don't need to know anything about the ai algorithm, just need to know how to call the api of openAI.
 
+## 页面模块展示
+
+### ai分析
+![](./screenshots/ai-analysis.png)
+
+### ai回答
+![](./screenshots/ai.png)
+
+### 历史记录分析
+![](./screenshots/history.png)
+
+### ai总结
+![](./screenshots/summary.png)
+
+### 单元测试
+![](./screenshots/test.png)
+
+
 项目使用丰富的全栈技术栈
 - nextjs
 - 加密算法对.env文件加密
@@ -93,7 +111,7 @@ if don't have `neonctl` need to install it `npm install -g neonctl`
 ai part
 - side bar
 - LLM & Prompts
-![](./image.png)
+![](./screenshots/ai.png)
 
 ### 2024-10-24
 
@@ -132,4 +150,4 @@ packages download
 
 test tsconfig
 
-![test screenshot](./test.png)
+![test screenshot](./screenshots/test.png)
