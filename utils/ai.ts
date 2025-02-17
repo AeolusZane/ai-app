@@ -45,7 +45,7 @@ const getPrompt = async (content: string) => {
 
 export const analyze = async (content: string) => {
     const prompt = await getPrompt(content);
-    const model = new OpenAI({ temperature: 0, modelName: 'gpt-3.5-turbo' });
+    const model = new OpenAI({ temperature: 0, modelName: 'gpt-3.5-turbo', topP: 0.95 });
     const result = await model.call(prompt);
     try {
         return parser.parse(result);
@@ -66,7 +66,7 @@ export const qa = async (question, entries) => {
         })
     });
 
-    const model = new OpenAI({ temperature: 0, modelName: 'gpt-3.5-turbo' });
+    const model = new OpenAI({ temperature: 0, modelName: 'gpt-3.5-turbo', topP: 0.95 });
     // chain allows you to chain multiple calls to the model
     // chain允许将多个调用链接到模型
     const chain = loadQARefineChain(model);
