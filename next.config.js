@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-// const nextConfig = () => ;
 
 module.exports = {
     typescript: {
@@ -7,5 +6,5 @@ module.exports = {
     },
     eslint: {
         ignoreDuringBuilds: true
-    }
+    },
 }
